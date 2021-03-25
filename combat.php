@@ -1,4 +1,7 @@
+<?php 
+session_start();
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +9,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-    <title>Document</title>
+    <script src="main.js"></script>
+    <title>COmbat</title>
 </head>
 <body>
     
-    <?php
+    <?
     include "fonction.php"; 
-    
-    session_start();
+
     if($access){
         
-        echo "BIENVENUE sur MON SITE";
-        echo '<a href="combat.php">  vient combatre</a>';
-        $Perso = new MonPersonnage($mabase);
+        echo "BIENVENUE sur CE COMBAT";
+        echo '<a>'
+
+
         
 
     }else{
-        echo "c'est ouf";
+     
         echo $errorMessage;
     }
     ?>
